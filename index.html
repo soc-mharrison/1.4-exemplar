@@ -17,6 +17,19 @@
     </head>
 
 <body>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="why-dtec-clip.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    
+<div class="content">
+  <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
 <div class="w3-display-container w3-animate-opacity">
   <img src="./images/plans-g5db08ccff_1920.jpg" alt="web design sketches" style="width:100%;min-height:200px;max-height:400px;">
   <div class="w3-display-middle w3-text-white w3-jumbo" style="text-shadow:1px 1px 0 #444">Web Design </br> Step 1: Design</div>
@@ -93,15 +106,31 @@ Click this Accordion Button to see a Youtube Video on "How to Use w3 Spaces"</bu
     <script src="scripts.js"></script>
 
     <!-- Load internal JavaScript -->
-    <script>
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+<script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+</script>
+
+
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
 </script>
 
 </html>

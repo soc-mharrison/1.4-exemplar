@@ -1,0 +1,112 @@
+ <!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Basic site on w3.school Spaces Free Web">
+        <meta name="keywords" content="NCEA 1.4 Basic digital media skills with HTML, CSS, JavaScript">
+        <meta name="author" content="Matt Harrison">
+        <title>Basic Example page</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    </head>
+
+<body>
+<div class="w3-display-container w3-animate-opacity">
+  <img src="./images/matrix-gad2a37813_1280.jpg" alt="Stage 2: code your Matrix" style="width:100%;min-height:200px;max-height:400px;">
+  <div class="w3-display-middle w3-text-white w3-jumbo" style="text-shadow:1px 1px 0 #444">Web design </br>Step2: Code</div>
+  <div class="w3-container w3-display-bottomright w3-text-white w3-large" style="text-shadow:1px 1px 0 #444">
+    <p>Brought to you by Mr Harrison</p>
+  </div>
+</div>
+
+
+<div class="w3-container w3-padding-16">
+  <header class="w3-container w3-teal">
+      <h1 class="w3-jumbo">Code HTML & w3.css site</h1>
+  </header>
+
+  <nav class="w3-container w3-bar w3-mobile w3-white w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-blue"> Home </a>
+    <a href="page-2.html" class="w3-bar-item w3-button w3-border w3-hover-blue w3-teal"> Page 2 </a>
+    <a href="page-3.html" class="w3-bar-item w3-button w3-border w3-hover-blue  "> Page 3 </a>
+
+  </nav>
+
+  <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+Click this Accordion Button to see a Youtube Video on "How to use w3.css"</button>
+
+<div id="Demo1" class="w3-container w3-hide">
+   <div class="w3-cell-row w3-blue w3-half">
+    <div class="w3-cell w3-mobile">
+      <h2> How to make a W3.css site </h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H54_P-oJy38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      <p>Using w3.css to maka a website:</br> <a href="https://youtu.be/H54_P-oJy38" target=”_blank”> https://youtu.be/H54_P-oJy38</a></p>
+    </div>
+
+  </div>
+</div>     <!-- End of hidden popup content -->
+
+
+    <!-- start 3 columns -->
+
+<div class="w3-cell-row w3-light-grey">
+  <div class="w3-container w3-light-grey w3-cell w3-mobile w3-third">
+    <p> Remember F.A.I.L. =  <strong>F</strong>irst <strong>A</strong>ttempts <strong>I</strong>n <strong>L</strong>earning</p>
+    <img src="./images/error_robot.png" height="150" alt="Every new ERROR is called 'progress'">
+      <div class="w3-code notranslate">
+          <p> Remember to add &lt;!-- comments --&gt; </p>
+          <!-- Actual comment is invisible but I use code for <> -->
+  </div>
+    
+  </div>
+
+  <!-- column 2 -->
+  <div class="w3-container w3-light-grey w3-cell w3-mobile w3-third w3-border">
+    <a href="https://www.w3schools.com/w3css/w3css_layout.asp" target="_blank"> <p>Debug your W3.CSS</p>
+    <img height="200" src="./images/beep_boop_beep_robot.png" alt="Remember to speak robot and close your tags"/>
+    </a>
+  </div>
+
+  <!-- col 3 -->
+  <div class="w3-container w3-purple w3-cell w3-mobile w3-third">
+    <p>Keep Going until you've nailed it!</p>
+    <img height="200" src="./images/nailed_it.png" alt="Remember to speak robot and close your tags"/>
+  </div>
+</div>
+      
+<footer class="w3-container w3-bar w3-teal">
+    <div class="w3-container w3-half">
+      <p> <a href="https://pixabay.com/photos/matrix-communication-software-pc-2953883/" title="_blank">Image by StartupStockPhotos from Pixabay <a/></p>
+      <p> <a href="https://pixabay.com/service/license-summary/" target="_blank">Hero image license from Pixabay </a> </p>
+    </div>  
+    <div class="w3-container w3-half">
+        <p> Avatar from Bitmoji </p>
+        <p> <a href="https://www.bitmoji.com/bitmoji_brand_guidelines.pdf" title="_blank">Bitmoji License</a></p>
+    </div>
+</footer> 
+</div>
+
+        
+</body>
+
+    <!-- Load external JavaScript -->
+    <script src="scripts.js"></script>
+
+    <!-- Load internal JavaScript -->
+    <script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</html>
